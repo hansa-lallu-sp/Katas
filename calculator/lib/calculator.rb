@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Calculator
   def evaluate(string)
     ['+', '-', '*', '/'].each do |operator|
