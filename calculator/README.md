@@ -23,8 +23,19 @@ Approach
 | "2 / 2 + 3 * 4 - 6" | 7 |
 
 How to run:
-- run ``bundle``
+- run ``bundle`` within the calculator directory 
+- ```irb```
 
-test 
-- run ``rspec``
+```
+2.7.1 :001 > require './lib/calculator.rb'
+ => true 
+2.7.1 :002 > Calc = Calculator.new
+ => #<Calculator:0x00007f817ca0bc48> 
+2.7.1 :003 > Calc.evaluate('8 * 5 - 3 + 7')
+ => 44.0 
+ ```
+
+
+To test 
+- run ``rspec`` within the calculator directory
 
