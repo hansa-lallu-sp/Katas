@@ -4,5 +4,3 @@ class Calculator
     array = array.inject(:+) 
   end 
 end
-
-
