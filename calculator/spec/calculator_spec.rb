@@ -18,5 +18,11 @@ describe Calculator do
 
   it 'divides numbers when given a divider operator within the string' do
     expect(subject.evaluate('4 / 5')).to eq(0.8)
+    expect(subject.evaluate('5 / 8')).to eq(0.625)
+  end
+
+  it 'follows mathematics principle and orders correctly' do
+    expect(subject.evaluate('4 + 5 * 6')).to eq(34)
+    expect(subject.evaluate('2 / 2 + 3 * 4 - 6')).to eq(7)
   end
 end
