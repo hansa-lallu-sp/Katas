@@ -1,6 +1,10 @@
 class Calculator
   def evaluate(string)
-    array = string.split(" ").select.with_index { |num, idx| idx.even?  }.map { |number| number.to_i }
-    array = array.inject(:+) 
+    ['+', '*'].each do |operator|
+        if string.include?(operator)
+          return string.split(operator).map{ |x| evaluate(x) }.inject(operator)
+        end
+    end
+    string.to_i
   end 
 end

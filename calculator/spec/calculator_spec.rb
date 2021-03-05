@@ -11,4 +11,7 @@ describe Calculator do
         expect(subject.evaluate('4 * 5')).to eq(20)
     end 
 
+    it 'subtracts numbers when given a subtractor operator within the string' do 
+        expect(subject.evaluate('4 - 5')).to eq(-1)
+    end 
 end
