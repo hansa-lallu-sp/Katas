@@ -4,6 +4,7 @@ require 'game'
 
 RSpec.describe(Game) do
   subject(:game) { described_class.new }
+  
   it 'starts a new game with no scores' do
     expect(game.score).to eq('Love - Love')
   end
