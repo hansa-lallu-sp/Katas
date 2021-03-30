@@ -7,3 +7,4 @@ have an advantage of 2 points
 If both players have 40 points then there is a 'deuce'
 Deuce: in order to be a winner you should score two points twice in succession. Otherwise, the deuce still lasts
 Result: current score or who wins
+
