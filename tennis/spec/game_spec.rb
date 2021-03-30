@@ -15,8 +15,12 @@ RSpec.describe(Game) do
   end
 
   it 'changes the score by fifteen to thirty points when player one scores twice' do
-    game.win_point
-    game.win_point
+    2.times{game.win_point}
     expect(game.score).to eq('Thirty - Love')
+  end
+
+  it 'changes the score by ten to forty points when player one scores three times' do
+    3.times{game.win_point}
+    expect(game.score).to eq('Forty - Love')
   end
 end

@@ -18,3 +18,9 @@ Steps:
 3. increases player ones score by 15 again
 "Thirty - Love"
 
+4. increases player ones score by 10
+"Forty - Love"
+
+5. player one wins game after 40 points 
+
+
