@@ -4,7 +4,11 @@ class Game
   end
 
   def win_point
-    @point = 'Fifteen'
+    @point = if @point == 'Love'
+               'Fifteen'
+             else
+               'Thirty'
+             end
   end
 
   def score
