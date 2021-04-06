@@ -39,3 +39,20 @@ How to run:
 To test 
 - run ``rspec`` within the calculator directory
 
+
+Review by Karlo 
+
+Good:
+- great use of input/output table to keep tests focused on acceptance criteria
+- clever use of recursion in solution
+- used #frozen_string_literal: true
+- red, green, refactor cycle TDD approach used
+- complete coverage of happy paths tested
+
+Possible Improvements:
+- could also test some unhappy paths and edge cases
+- could extract list of operators into a constant
+- method is quite dense and could be hard to follow. Consider splitting out responsibilities.
+
+Overall very clever solution to kata :thumbsup:
+
