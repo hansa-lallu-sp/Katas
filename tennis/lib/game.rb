@@ -3,14 +3,14 @@ class Game
     @point = 'Love'
   end
 
+  SCORES = {
+    'Love' => 'Fifteen',
+    'Fifteen' => 'Thirty',
+    'Thirty' => 'Forty'
+  }.freeze
+
   def win_point
-    @point = if @point == 'Love'
-               'Fifteen'
-             elsif @point == 'Fifteen'
-               'Thirty'
-             else
-               'Forty'
-             end
+    @point = SCORES[@point]
   end
 
   def score
